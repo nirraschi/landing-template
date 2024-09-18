@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles.css */
+.shape-wave {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #64C7CC 50%, #9AD3BC 50%);
+    position: relative;
+    overflow: hidden;
+}
+
+.shape-wave:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 200%;
+    height: 100%;
+    background: #64C7CC;
+    border-radius: 40%;
+    transform: translateX(-25%);
+}
